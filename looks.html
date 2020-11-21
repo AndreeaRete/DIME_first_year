@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthy munch-app</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="poster.html">Our poster</a>
+            <a href="nutri-score.html">Nutri-score</a>
+            <a href="contact.html">Contact</a>
+        </div>
+  
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+            <div class="home">
+
+                <div class="title">
+                    <h2>Our app</h2>
+                </div>
+            <p>With our app, we want to continue the healthy image that we used for our poster by continuing the green colour scheme. On the Home page on the app, users make and edit their profile. By having a 
+                profile, they can access their favourite recipes and shopping lists on any device. Under the My Recipe page, users can save their favourite recipes. The app's layout is designed with universal design
+                 in mind. The basic idea of universal design is that you design something so that if it works for those with challenges, it works for everyone. In our app, we used images of the food and of the
+                  supermarket's logo as people with autism are more visual and find that easier to understand. Many people with disabilities, such as dyslexia, lack good organisational skills. With our app, you can 
+                  easily organise your shopping list for the week by adding a recipe to your shopping list. Neurotypical people will also find these features very user friendly.</p>
+            
+            <img src="images/dime_app.jpg" id="look_images">
+            <p>We chose to have a simple design with an easy to understand user interface. We have 5 sections on the bottom: Home, My recipes, Search, Compare and Shopping List. 
+                You can choose to save the recipes and when you do you can also add comments to them. They will be stored for later in the "My recipes" section.</p>
+            <ul style="list-style-type: none;">
+                <li>&#8226; Rounded edges are more attractive and make the app more user friendly;</li>
+                <li>&#8226; The clean layout, neutral coloured background and vibrant images of the prepared meals stand out clearly.</li>
+            </ul>
+            
+            <img src="images/dime_app (1).jpg" id="look_images">
+           <p>To help with the search process we introduced some settings that can be accessed on the top right cornered. The window of options appears as seen in the image 
+              above.</p>
+            <ul style="list-style-type: none;">
+                <li>&#8226; Multiple filters make life easier for users with dietary requirements;</li>
+                <li>&#8226; Nutri-score filter makes it easier for users to find healthy meals.</li>
+            </ul>
+
+            <img src="images/dime_app (2).jpg" id="look_images">
+            <p>The image on the left shows our "Compare" page. Here you can view the prices of a certain product in popular grocery stores. It's important to note that there will 
+               be a maximum of 10 shops displayed per product because not all of them have online lists of products.</p>
+            <ul style="list-style-type: none;">
+                <li>&#8226; Comparing shops' prices allows users to find the best price</li>
+                <li>&#8226; Eggs are used as an example on the app to demonstrate how it works</li>
+            </ul>
+
+            <img src="images/dime_app (3).jpg" id="look_images">
+            <p>On our "Shopping List" page we managed to add a way to organise more lists together. This way you can add dates (weeks or days) for which the
+                shopping list applies.</p>
+            <ul style="list-style-type: none;">
+                <li>&#8226; When a user is on a recipe, they can add the recipe to their shopping list so that all the ingredients from the recipe are on the list</li>
+                <li>&#8226; Users can make as many shopping lists as they want and can give them titles</li>
+            </ul>
+            </div>
+
+            <footer>
+                <p>Group Y (Amy, Andreea, Aoife, Amodu & Rory) thank you for viewing this page.</p>
+            </footer>
+        </div>
+  
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthy munch-nutri</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="looks.html">How our app looks</a>
+            <a href="poster.html">Our poster</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span><br>
+
+            <div class="home">
+                <div class="title">
+                    <h2>Nutri-score</h2>
+                </div>
+            <img src="images/nutri1.png" id="score" style="width: 30%;">
+            <p>Nutri-score is a nutritional labelling system which takes the nutritional value of a product and converts it into a simple value system that everyday people can 
+                instantly understand. The value system has 5 different levels represented by letters, A to E. Each letter has a colour that uses a well-known colour system, for example, traffic 
+                lights. A is green and is the best nutritional value a product can have. E is red and is the worst nutritional value a product can have.</p>
+    
+            <img src="images/nutri2.png" id="look_images" style="max-width: 70%;">
+            <img src="images/nutri3.png" id="look_images" style="max-width: 40%;">
+  
+            <p><b>How is it calculated?</b></p>
+            <p>Nutri-score uses a point system in order to calculate a product's Nutri-score. The substances, for example, proteins or sugar are 
+                divided into two categories, good (green) and bad (red). Depending on the amount of a certain substance it will get a different number of points. In this example, sugar gets 0 points. 
+                The total number of points for each category are then taken away from each other. In this example, the first category's total number of points is 7 and the second's total number of 
+                points is 10. Therefore the resulting Nutri-score value is -3. The resulting number is converted into the corresponding Nutri-score label aka letter. In this example, the Nutri-score 
+                value of -3 results in this product getting an A level.</p>
+
+            <p>For further information on Nutri-score, visit <a href="https://nutriscore.colruytgroup.com/colruytgroup/en/about-nutri-score" target="_blank">https://nutriscore.colruytgroup.com/colruytgroup/en/about-nutri-score</a></p>
+            </div>
+
+            <footer>
+                <p>Group Y (Amy, Andreea, Aoife, Amodu & Rory) thank you for viewing this page.</p>
+            </footer>
+        </div>
+  
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>

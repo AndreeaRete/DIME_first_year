@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthy munch-home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="looks.html">How our app looks</a>
+            <a href="poster.html">Our poster</a>
+            <a href="nutri-score.html">Nutri-score</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+            
+            <div class="home">
+                <div class="title_index">
+                    <h2>Healthy munch</h2>
+                    <h3>Affordable diet made easy</h3>
+                </div>
+                <p>Are you a student with a tight budget? Do you find that healthy food is too expensive? Is planning your own meals too much of a hassle? If so, with the help of Healthy Munch you can eat healthier for less. </p>
+                <img src="images/food.jpg" id="look_images" style="max-width: 70%">
+                <p>Our app compares different shops' prices so you can get more for your money. With our shopping list feature, you can easily plan this week's shop by adding recipes directing to your list. With thousands of 
+                    recipes, there's something for everyone. Using our Nutri-score filter, find the healthiest option. Filters for all types of dietary restrictions help you find delicious recipes that suit your needs.</p>
+                <img src="images/food2.jpg" id="look_images" style="max-width: 70%;">
+                <p>Got a little extra money? Why not get Healthy Munch Premium. With lots of benefits like:</p>
+                <ul style="list-style-type: none;font-weight: bold;">
+                    <li>&#8226; No ads</li>
+                    <li>&#8226; Premade meal plans</li>
+                    <li>&#8226; Plan your meals with our calendar</li>
+                    <li>&#8226; Discounts from our partenered shops</li>
+                    <li>&#8226; Exclusive access to cooking videos</li>                    
+                </ul>
+                <p>All these features from just &#128;5 per month.</p>
+                <p>What are you waiting? Get healthy munch today! &#x1F604;</p>
+                <p>Get our app using one of the following:</p>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/google.png" id="store">
+                    </div>
+                    <div class="column">
+                        <img src="images/apple.png" id="store">
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Group Y (Amy, Andreea, Aoife, Amodu & Rory) thank you for viewing this page.</p>
+            </footer>
+        </div>
+  
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>

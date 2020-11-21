@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthy munch-poster</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="looks.html">How our app looks</a>
+            <a href="nutri-score.html">Nutri-score</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+            <div class="home">
+            
+            <div class="title">
+                <h2>Our poster</h2>
+            </div>
+                <p>Our poster aims to catch people's eye with fun. We used a green background as studies have shown that green produced a calming sense of stability and 
+                    reliability while also making the audience think of health. We used pictures of fruit, including pineapple (yellow) or orange (orange), colours that have an energetic feel 
+                    and grab the attention. This brings the viewer's attention to our app's selling points. We also used a fun picture of happy fruit as this reinforces our healthy and fun image. 
+                </p>
+                <img src="images/poster.png" id="look_images" style="max-width: 70%;">
+                <p>We used various fonts and sizes to highlight certain aspects, for example, we put our app name in big font to aid memory. We put all text in the middle of our poster as when people 
+                    speed read things, this is where their focus lies. We did these things, fonts, sizing and middle text so that people with bad sight can see it clearly and people can understand it 
+                    from a distance. We ensured that we kept our poster short and to the point as people give posters only mere seconds of their attention during their busy day so you have to make an 
+                    impact.</p>
+            </div>
+        
+            <footer>
+                <p>Group Y (Amy, Andreea, Aoife, Amodu & Rory) thank you for viewing this page.</p>
+            </footer>
+        </div>
+  
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>

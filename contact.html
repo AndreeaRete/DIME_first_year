@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthy munch-contact</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="looks.html">How our app looks</a>
+            <a href="poster.html">Our poster</a>
+            <a href="nutri-score.html">Nutri-score</a>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <p></p>
+        <div class="container">
+            <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Don't be afraid to leave us a message, we won't munch on you</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/contact.png" style="width: 100%">
+                </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                    <label for="email">E-mail address</label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Your e-mail address...">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>Group Y (Amy, Andreea, Aoife, Amodu & Rory) thank you for viewing this page.</p>
+        </footer>
+        </div>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>
